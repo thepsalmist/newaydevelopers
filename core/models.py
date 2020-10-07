@@ -2,6 +2,16 @@ from django.db import models
 from django.shortcuts import reverse
 
 
+ROOM_CHOICES = (
+    (1, "1"),
+    (2, "2"),
+    (3, "3"),
+    (4, "4"),
+    (5, "5"),
+    (6, "6"),
+    (7, "7"),
+    (8, "8"),
+)
 BEDROOM_CHOICES = (
     (1, "1"),
     (2, "2"),
@@ -13,7 +23,7 @@ BEDROOM_CHOICES = (
     (8, "8"),
 )
 CATEGORY_CHOICES = (
-    ("SL", "Sale"),
+    ("FR", "Featured"),
     ("RE", "Rent"),
 )
 
@@ -34,6 +44,7 @@ class Property(models.Model):
     title = models.CharField(max_length=100)
     agent = models.ForeignKey(Agent, on_delete=models.DO_NOTHING, null=True)
     area = models.FloatField()
+    rooms = models.IntegerField(choices=ROOM_CHOICES, default=1, blank=True, null=True)
     bedroom = models.IntegerField(choices=BEDROOM_CHOICES, default=1)
     bathroom = models.IntegerField(default=1)
     garage = models.IntegerField(default=1)
@@ -48,6 +59,7 @@ class Property(models.Model):
     photo_3 = models.ImageField(blank=True, upload_to="Property/%Y/%m/%d")
     photo_4 = models.ImageField(blank=True, upload_to="Property/%Y/%m/%d")
     category = models.CharField(choices=CATEGORY_CHOICES, max_length=10, default="SL")
+    created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name = "Property"
@@ -67,6 +79,14 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class VideoTestimonial(models.Model):
+    title = models.CharField(max_length=200)
+    video_url = models.URLField()
+
+    def __str__(self):
+        return self.title
 
 
 class Contact(models.Model):

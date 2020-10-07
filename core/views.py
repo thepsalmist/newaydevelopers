@@ -16,7 +16,8 @@ class PropertyDetailView(DetailView):
 
 def index(request):
     properties = Property.objects.all()
-    latest_sales = Property.objects.filter(category="SL").order_by("-listing_date")[:4]
+    latest_sales = Property.objects.filter(category="FR").order_by("-listing_date")[:3]
+    latest_posts = Post.objects.order_by("-publish")[:3]
     clients = Testimonial.objects.all()
     if request.method == "POST":
         email = request.POST["email"]
@@ -37,7 +38,7 @@ def index(request):
 def property_for_sale(request):
     sale = Property.objects.filter(category="SL")
     recommended = Property.objects.filter(category="SL").order_by("-listing_date")[:4]
-    latest_posts = Post.objects.order_by("-publish")[:4]
+    latest_posts = Post.objects.order_by("-publish")[:3]
     paginator = Paginator(sale, 8)
     page_request_variable = "page"
     page = request.GET.get(page_request_variable)

@@ -3,38 +3,64 @@
 
 <html lang="en">
 
-
 <head>
+    <!-- Meta Tag -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BLACKROQ REALTORS | Home page</title>
-    <meta name="description" content="Real estate in kenya">
-    <meta name="keyword" content="property, real-estate">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uniland - Real Estate HTML5 Template">
+    <meta name="keywords"
+        content="real estate, property, property search, agent, apartments, booking, business, idx, housing, real estate agency, rental">
+    <meta name="author" content="unicoder">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Uniland - Real Estate HTML5 Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-    <link href="{% static 'core/css/normalize.css' %} " rel="stylesheet">
-    <link href="{% static 'core/css/all.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/fontello.css' %}" rel="stylesheet">
-    <link href="{% static 'core/fonts/icon-7-stroke/css/pe-icon-7-stroke.css' %}" rel="stylesheet">
-    <link href="{% static 'core/fonts/icon-7-stroke/css/helper.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/animate.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'core/css/bootstrap-select.min.css' %}" rel="stylesheet">
-    <link href="{% static 'core/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/icheck.min_all.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/price-range.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/owl.carousel.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/owl.theme.css' %}">
-    <link href="{% static 'core/css/owl.transitions.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
+    <!-- Required style of the theme -->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-4.1.3.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-select.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/fontawesome-all-5.5.0.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/webfonts/flaticon/flaticon.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/layerslider.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/color.css' %}" id="color-change">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/jslider.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/loader.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/settings.css' %}">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-</head>
 
-<body>
+
+<body class="page-load">
+    <div class="preloader">
+        <div class="loading-page">
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+        </div>
+    </div>
+
     {% if messages %}
     {% for message in messages%}
     <div class="alert alert-{{message.tags}}">
@@ -43,26 +69,82 @@
 
     {% endfor%}
     {% endif %}
-    {%block content%}
-    {%endblock content%}
 
-    <script src=" {% static 'core/js/modernizr-2.6.2.min.js' %}">
-    </script>
-    <script src="{% static 'core/js/jquery-1.10.2.min.js' %}"></script>
-    <script src="{% static 'core/bootstrap/js/bootstrap.min.js' %}"></script>
+    {% block content %}
+    {% endblock content %}
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'core/js/greensock.js' %}"></script>
+    <!-- LayerSlider script files -->
+    <script src="{% static 'core/js/layerslider.transitions.js' %}"></script>
+    <script src="{% static 'core/js/layerslider.kreaturamedia.jquery.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/popper-1.14.3.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap-4.1.3.min.js' %}"></script>
     <script src="{% static 'core/js/bootstrap-select.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap-hover-dropdown.js' %}"></script>
-
-    <script src="{% static 'core/js/easypiechart.min.js' %}"></script>
-    <script src="{% static 'core/js/jquery.easypiechart.min.js' %}"></script>
-
-    <script src="{% static 'core/js/owl.carousel.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/YouTubePopUp.jquery.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'core/js/jquery.fancybox-media.js' %}"></script>
+    <!--===============================================================================================-->
+    <!-- Owl Carousel slide need-->
+    <script src="{% static 'core/js/owl.js' %}"></script>
+    <!--===============================================================================================-->
+    <!-- Achievement Counting need-->
+    <script src="{% static 'core/js/nsc.js' %}"></script>
+    <!--===============================================================================================-->
+    <!--tab gallery section-->
+    <script src="{% static 'core/js/mixitup.js' %}"></script>
+    <!--===============================================================================================-->
     <script src="{% static 'core/js/wow.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.cookie.js' %}"></script>
+    <script src="{% static 'core/js/settings.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jshashtable-2.1_src.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.numberformatter-1.2.3.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/tmpl.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.dependClass-0.1.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/draggable-0.1.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.slider.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
+    <script src="{% static 'core/js/map/markerwithlabel_packed.js' %}"></script>
+    <script src="{% static 'core/js/map/infobox.js' %}"></script>
+    <script src="{% static 'core/js/map/markerclusterer_packed.js' %}"></script>
+    <script src="{% static 'core/js/map/custom-map.js' %}"></script>
 
-    <script src="{% static 'core/js/icheck.min.js' %}"></script>
-    <script src="{% static 'core/js/price-range.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/jquery.barrating.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'core/js/custom.js' %}"></script>
+    <script>
+        (function ($) {
+            var _latitude = 36.596165;
+            var _longitude = -97.062988;
+            createHomepageGoogleMap(_latitude, _longitude);
+        })(jQuery);
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <script src="{% static 'core/js/main.js' %}"></script>
+        ga('create', 'UA-106986305-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </body>
 

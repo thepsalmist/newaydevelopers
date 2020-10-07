@@ -1,790 +1,353 @@
-@media (max-width: 480px){
-
-    .welcome_text .page-title h2 {
-        color: #9B9B9B;
-        text-transform: uppercase;
-        background-color: #FFF;
-        top: 126px;
-        right: 26px;
-        font-weight: 500;
-        font-size: 27px;
-        padding: 35px 10px;
-        height: 100px;
-        position: initial;
-        width: 100%;
-        border-radius: 0px;
-    }
-    .asks-first { 
-        padding: 15px;
-        margin-bottom: 10px;
-
-    }
-    .asks-first-info {
-        color: #FFF;
-        margin: 5px;
-    }
-    .welcome-circle {
-        background-color: transparent;
-        display: inline-block;
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-        margin: -18px 0px;
-        border: 10px solid #FFF;
-        position: relative;
-        z-index: 1000;
-    }
-    .welcome-estate {
-        background-color: #FFF;
-        padding: 10px 0px;
-        text-align: center;
-        fill: #FFF;
-    }
-    .Welcome-area .container .Welcome-entry {
-        padding: 10px 5px 65px;
-        overflow: hidden;
-    }
-
-    .header-connect { 
-        text-align: center;
-    }
-    .register-area {
-    padding: 50px 0px;
+@media (max-width: 1730px) {
+.bg_img_6 { /*about page section*/
+	background-position: 135% center
 }
-  .register-area .col-md-6 {
-        margin-bottom: 15px;
-    }
-    .navbar-default .navbar-nav > li > a.active::after {
-        background-color:#FFF !important; 
-    }
-    .navbar-default .navbar-nav > li > a::after {
-        background-color: #FFF !important;
-    }
-    .slider-content {
-        top: 10%;
-    }
-    .search-btn, .toggle-btn { 
-        margin-bottom: 15px;
-    }
-    .proerty-th {
-        margin-left: 0px;
-    }
-
-    .header-call p span{
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .header-call p span i{
-        font-size: 14px;
-    }
-    .header-social ul{
-        padding-top: 0px;
-    }
-    .header-social ul li a{
-        font-size: 12px;
-    }
-    .navbar .container{
-        padding: 10px 15px;
-    }
-    .navbar{
-        min-height: 75px;
-    }
-    .navbar-collapse {
-        margin-top: 15px;
-    }
-    .navbar-brand img{
-        height: auto;
-        width: 110px;
-    }
-    .navbar-default .navbar-nav > li > a {
-        font-size: 13px;
-    }
-    .nav-button{
-        font-size: 13px;
-        padding: 6px 13px;
-    }
-    .navbar-nav > li > a{
-        padding-left: 15px;
-        padding-right: 6px;
-    }
-    .main-nav{
-        padding-top: 4px;
-    }
-    .navbar-default .navbar-nav > li > a.active::after{
-        bottom: -2px;
-        height: 2px;
-        width: 100%;
-    }
-    .navbar-default .navbar-nav > li > a::after{
-        bottom: -2px;
-        height: 2px;
-    }
-    .slider-area .container{
-        padding: 0px 25px;
-    }
-
-    .slider-content {
-        padding: 10px;
-    }
-    .search-toggle .mar-l-20 {
-        margin-left: 0px;
-    }
-    .prop-btm-sheaerch{
-        display: block;
-        margin: 0 auto;
-    }
-    .slider-content h2{
-        font-size: 21px;
-        margin-bottom: 15px;
-    }
-    .slider-content p{
-        font-size: 12px;
-        margin-bottom: 18px;
-    }
-    .search-form{
-        padding: 15px;
-    }
-    .search-form .form-inline .form-group {
-        width: 100%; 
-    }
-    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-        width: 100%;  
-    }
-    .bootstrap-select button.dropdown-toggle { 
-        width: 100%;
-    }
-    .search-form .search-toggle {
-        margin-top: 15px;
-        overflow: hidden;
-
-        padding: 0px;
-    }
-    .form-inline .form-control, .form-inline .form-control { 
-        width: 100%;
-    }
-
-    .slider-content {
-        top: 5%;
-    }
-    .slider-area{
-        height:440px; 
-    }
-
-    .home-area-1 { 
-        padding-top: 65px;
-    }
-    #bg-slider .item img {
-        height: 440px;
-    }
-    .slider .owl-pagination {
-        bottom: 165px;
-        right: 0;
-        width: 30px;
-    }
-    .page-title{
-        padding-top: 50px;
-    }
-    .page-title h2 {
-        font-size: 20px;
-        margin-top: 2px;
-    }
-
-    .page-title h5 {
-        font-size: 12px;
-    }
-    .page-title p {
-        font-size: 12px;
-        line-height: 20px;
-        margin-top: 10px;
-        padding: 0 5%
-    } 
-
-    .nav > li > a {
-        padding: 8px 10px;
-    }
-    .nav-tabs > li > a {
-        font-size: 12px;
-    }
-    .tab-content ul li {
-        height: 235px;
-        margin-bottom: 20px;
-        width: 219px;
-    }
-    .tab-content ul li a img {
-        height: 100%;
-        width: 100%;
-    }
-    .overlay {
-        height: 235px;
-        top: -104px;
-    }
-
-    .client-text {
-        margin-left: 8px;
-        padding: 20px 16px;
-    }
-    .client-face > img {
-        border: 2px solid #fff;
-        width: 60px;
-    }
-    .testimonial .item .client-face {
-        right: 15px;
-        top: 100px;
-    }
-    .footer-copy{
-        padding: 0 20px;
-    }
-    .single-footer {
-        margin-top: 35px;
-    }
-    .single-footer img {
-        width: 150px;
-    }
-    .single-footer p {
-        font-size: 13px;
-    } 
-    .footer-copy span {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .single-footer ul li {
-        margin-bottom: 5px;
-    }
-    .single-footer ul li a {
-        font-size: 13px;
-    }
-    .client-text p {
-        line-height: 20px;
-        font-size: 13px;
-    }
-    .client-text h4 {
-        font-size: 13px;
-    }
-    .client-text h4 i {
-        font-size: 11px;
-    }
-
-    .home-lager-shearch .large-search {
-        padding: 10px;
-    }
-    .home-lager-shearch{
-        padding-top: 0px;
-        margin-top: -200px;
-    }
-    .properties-area .pr0 {
-        padding-right: 15px !important;
-    }
-
-    .proerty-th-list .col-md-4 .item-thumb img { 
-        height: 285px; 
-        width: 100%;
-        padding-right: 14px;
-    }
-    .pl0 {
-        padding-left: 15px !important;
-    }
-    .layout-switcher { 
-        display: none;
-    }
-    .proerty-th-list p { 
-        padding-top: 10px; 
-    }
 }
 
-
-@media (min-width: 480px) and (max-width: 767px){
-
-    .welcome_text .page-title h2 {
-        color: #9B9B9B;
-        text-transform: uppercase;
-        background-color: #FFF;
-        top: 126px;
-        right: 26px;
-        font-weight: 500;
-        font-size: 27px;
-        padding: 35px 10px;
-        height: 100px;
-        position: initial;
-        width: 100%;
-        border-radius: 0px;
-    }
-    .asks-first { 
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-    .asks-first-info {
-        color: #FFF;
-        margin: 5px;
-    }
-    .welcome-circle {
-        background-color: transparent;
-        display: inline-block;
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-        margin: -18px 0px;
-        border: 10px solid #FFF;
-        position: relative;
-        z-index: 1000;
-    }
-    .welcome-estate {
-        background-color: #FFF;
-        padding: 10px 0px;
-        text-align: center;
-        fill: #FFF;
-    }
-    .Welcome-area .container .Welcome-entry {
-        padding: 10px 5px 65px;
-        overflow: hidden;
-    }
-
-    .header-connect { 
-        text-align: center;
-    }
-    .home-lager-shearch .large-search {
-        padding: 10px;
-    }
-    .home-lager-shearch{
-        padding-top: 0px;
-        margin-top: -200px;
-    }
-    .navbar-default .navbar-nav > li > a.active::after {
-        background-color:#FFF !important; 
-    }
-    .navbar-default .navbar-nav > li > a::after {
-        background-color: #FFF !important;
-    }
-    .slider-content {
-        top: 10%;
-    }
-    .register-area {
-    padding: 50px 0px;
-    }
-     .register-area .col-md-6 {
-        margin-bottom: 15px;
-    }
-    .search-form{
-        padding: 15px;
-    }
-    .search-form .form-inline .form-group {
-        width: 100%; 
-    }
-    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-        width: 100%;  
-    }
-    .bootstrap-select button.dropdown-toggle { 
-        width: 100%;
-    }
-    .search-form .search-toggle {
-        margin-top: 15px;
-        overflow: hidden;
-        color: #777;
-        border-top: 1px solid #EAEAEA;
-        padding: 0px;
-    }
-    .search-btn, .toggle-btn {
-        margin-bottom: 15px;
-    }
-    .prop-btm-sheaerch{
-        display: block;
-        margin: 0 auto;
-    }
-    .search-toggle .mar-l-20 {
-        margin-left: 0px;
-    }
-
-    .box-tree .item-tree-icon {
-        padding-top: 20%;
-    }
-    .more-proerty{
-        padding-bottom: 35px;
-    }
-
-    .header-call p span {
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .header-call p span i {
-        font-size: 14px;
-    }
-    .header-social ul{
-        padding-top: 0px;
-    }
-    .header-social ul li a {
-        font-size: 12px;
-    }
-    .navbar .container {
-        padding: 10px 15px;
-    }
-    .navbar {
-        min-height: 75px;
-    }
-    .navbar-collapse {
-        margin-top: 15px;
-    }
-    .navbar-brand img {
-        height: auto;
-        width: 110px;
-    }
-    .navbar-default .navbar-nav > li > a {
-        font-size: 13px;
-    }
-    .nav-button {
-        font-size: 13px;
-        padding: 6px 13px;
-    }
-    .navbar-nav > li > a {
-        padding-left: 15px;
-        padding-right: 6px;
-    }
-    .main-nav {
-        padding-top: 4px;
-    }
-    .navbar-default .navbar-nav > li > a.active::after {
-        bottom: -2px;
-        height: 2px;
-        width: 100%;
-    }
-    .navbar-default .navbar-nav > li > a::after {
-        bottom: -2px;
-        height: 2px;
-    }
-
-    .slider-content {
-        margin-left: 0px;
-        padding: 25px;
-    }
-    .slider-content h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .slider-content p {
-        font-size: 12px;
-        margin-bottom: 50px;
-    }
-    .search-form {
-        padding: 20px 30px;
-    }
-
-    .slider-content {
-        top: 5%;
-    }
-    .slider-area{
-        height:440px;        
-    }
-    .content-area { 
-        padding-top: 100px;
-    }
-    #bg-slider .item img {
-        height: 440px;
-    }
-    .slider .owl-pagination {
-        bottom: 165px;
-        right: 0;
-        width: 30px;
-    }
-    .page-title{
-        padding-top: 50px;
-    }
-    .page-title h2 {
-        font-size: 20px;
-        margin-top: 2px;
-    }
-    .page-title h5 {
-        font-size: 12px;
-    }
-    .page-title p {
-        line-height: 20px;
-        margin-top: 10px;
-        font-size: 12px;
-    }
-
-    .nav > li > a {
-        padding: 8px 10px;
-    }
-    .nav-tabs > li > a {
-        font-size: 12px;
-    }
-
-    .overlay {
-        height: 235px;
-        top: -104px;
-    }
-
-    .proerty-th {
-        margin-left: 0px;
-    }
-    .client-text {
-        margin-left: 0; 
-    }
-    .client-text p {
-        line-height: 23px;
-        padding: 0px 0px 0.24em;
-        font-size: 13px;
-    }
-    .testimonial .item .client-face {
-        top: 130px;
-        right: 25px;
-    }
-    .single-footer img {
-        width: 150px;
-    }
-    .single-footer p {
-        font-size: 13px;
-    }
-
-    .footer-copy span {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .single-footer ul li {
-        margin-bottom: 5px;
-    }
-    .single-footer ul li a {
-        font-size: 13px;
-    }
-    .home-lager-shearch .large-search {
-        padding: 10px;
-    }
-    .home-lager-shearch{
-        padding-top: 0px;
-        margin-top: -200px;
-    }
-    .pr0 {
-        padding-right: 15px !important;
-    }
-    .proerty-th-list .col-md-4 .item-thumb img { 
-        height: 285px; 
-        width: 100%;
-        padding-right: 14px;
-    }
-    .pl0 {
-        padding-left: 15px !important;
-    } 
-    .proerty-th-list p { 
-        padding-top: 10px; 
-    }
+@media (max-width: 1600px) {
+.bg_img_6 { /*about page section*/
+	background-position: 160% center
+}
 }
 
-@media (min-width: 768px) and (max-width: 979px){
-
-    .header-call p span {
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .header-call p span i {
-        font-size: 14px;
-    }
-    .header-social ul{
-        padding-top: 0px;
-    }
-    .header-social ul li a {
-        font-size: 12px;
-    }
-    .navbar {
-        min-height: 85px;
-    }
-    .navbar-brand img {
-        width: 110px;
-    }
-    .navbar-default .navbar-nav > li > a {
-        font-size: 13px;
-    }
-    .nav-button {
-        font-size: 13px;
-        padding: 6px 13px;
-    }
-    .navbar-nav > li > a {
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-    .main-nav {
-        padding-top: 4px;
-    }
-    .navbar-default .navbar-nav > li > a.active::after {
-        bottom: -15px;
-        height: 4px;
-        width: 100%;
-    }
-    .navbar-default .navbar-nav > li > a::after{
-        bottom: -15px;
-        height: 4px;
-    }
-      .register-area .col-md-6 {
-        margin-bottom: 15px;
-    }
-    .slider-content {
-        margin-left: 0px;
-        padding: 35px;
-    }
-    .slider-content h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .slider-content p {
-        font-size: 12px;
-        margin-bottom: 50px;
-    }
-    .search-form {
-        padding: 15px 0;
-    }
-    .form-inline .form-control, .form-inline .form-control {
-        width: 100%;
-    }
-
-    .slider-area{
-        height:440px; 
-    }    
-    .content-area { 
-        padding-top: 15px;
-    }
-    .search-form .form-inline .form-group {
-        width: 195px; 
-    }
-
-    #bg-slider .item img {
-        height: 440px;
-    }
-    .slider .owl-pagination {
-        bottom: 165px;
-        right: 0;
-        width: 30px;
-    }
-    .page-title{
-        padding-top: 50px;
-    }
-    .page-title h2 {
-        font-size: 20px;
-        margin-top: 2px;
-    }
-    .page-title h5 {
-        font-size: 12px;
-    }
-    .page-title p {
-        line-height: 20px;
-        margin-top: 10px;
-        font-size: 12px;
-    }
-    .tab-content ul li {
-        height: 235px;
-        margin-bottom: 20px;
-        width: 219px;
-    }
-    .tab-content ul li a img {
-        height: 100%;
-        width: 100%;
-    }
-    .overlay {
-        height: 235px;
-        top: -104px;
-    }
-
-    .client-text {
-        margin-left: 0; 
-    }
-    .client-text p {
-        line-height: 22px;
-        padding: 0px 0px 0.35em;
-        font-size: 14px;
-    }
-    .asks-first { 
-        margin-bottom: 10px;
-    }
-    .testimonial .item .client-face {
-        right: 17px;
-        top: 100px;
-    }
-    .single-footer img {
-        width: 150px;
-    }
-    .single-footer p {
-        font-size: 13px;
-    }
-
-    .footer-copy span {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 12px;
-    }
-    .single-footer ul li {
-        margin-bottom: 5px;
-    }
-    .single-footer ul li a {
-        font-size: 13px;
-    }
-    .proerty-th-list .col-md-4 .item-thumb img { 
-        height: 285px; 
-        width: 100%;
-        padding-right: 14px;
-    }
-    .pr0 {
-        padding-right: 15px !important;
-    }
-    
-    .proerty-th-list p { 
-        padding-top: 10px; 
-    }
+@media (max-width: 1450px) {
+.bg_img_6 { /*about page section*/
+	background-position: 188% center
+}
 }
 
-@media (min-width: 969px) and (max-width: 1169px){
+@media (max-width: 1365px) {
+.bg_img_6 { /*about page section*/
+	background-position: 200% center
+}
+}
 
-    .navbar-nav > li > a {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .header-social .list-inline > li{
-        padding-right: 0px
-    }
-    .slider-content {
-        margin-left: 0px;
-    }
-    .slider-area{
-        height: 540px;
-    }
-    #bg-slider .item img {
-        height: 540px;
-    }
-    .tab-content ul li {
-        height: 160px;
-        width: 145px;
-    }
-    .tab-content ul li a img{
-        width: 100%;
-        height: 100%;
-    }
-    .overlay > h3 {
-        font-size: 15px;
-        left: 10px;
-    }
+@media (max-width: 1300px) {
+.bg_img_6 { /*about page section*/
+	background-position: 245% center
+}
+}
 
-    .client-text {
-        margin-left: 5px; 
-    }
-    .testimonial .item .client-face {
-        right: 29px;
-        top: 125px;
-    }
-    .client-text p {
-        line-height: 22px;
-        padding: 0px 0px 0.35em;
-        font-size: 14px;
-    }
-    .client-text {
-        border-radius: 2px;
-        padding: 15px 15px;
-        margin: 15px;
-        border: 1px solid #ECE9E9;
-        background-color: #F5F5F5;
-    }
-    .proerty-th-list .col-md-4 .item-thumb img { 
-        height: 285px; 
-        width: 100%;
-        padding-right: 14px;
-    }
-    
-    .proerty-th-list p { 
-        padding-top: 10px; 
-    }
+@media (max-width: 1225px) {
+.bg_img_6 { /*about page section*/
+	background-position: 265% center
+}
+}
+
+/*Large devices (desktops, 992px and up to 1199px)*/
+@media (max-width: 1199px) {
+.box-layout {
+	width: 100% !important
+}
+#header .submit_property {
+	display: none
+}
+.navbar-nav .dropdown-menu .dropdown ul.dropdown-menu {
+	left: 0
+}
+.pricing_item_1.active {
+	width: 350px;
+	height: 105%
+}
+.property_list_1 .property_text {
+	margin-bottom: 7px
+}
+.property_list_1.full .p-3 {
+	padding: 25px 20px !important
+}
+.single_property_detail .more_information li, .property_listing_2.style_2 li {
+	width: 50%
+}
+.bg_img_6 {
+	background-image: none
+}
+.browse_submit > p {
+	display: inline-block;
+	width: 100%;
+}
+.sidebar-widget.faq_brochure .btn {
+	padding: 5px 0;
+	text-align: center
+}
+.my_property_list.type_2 tbody tr td:first-child {
+	width: 220px;
+}
+}
+
+@media screen and (min-width:992px) {
+#header.fixed-top .top_header_1 {
+	display: none
+}
+#header.fixed-top, #header.fixed-top.header_style_2 {
+	position: fixed;
+	animation-duration: 1s;
+	animation-name: menu-sticky;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+#header .navbar .navbar-nav li > ul.dropdown-menu {
+	visibility: hidden;
+	display: block;
+	top: 110%;
+	opacity: 0;
+	webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .175);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .175);
+	border-color: transparent;
+	border-radius: 0
+}
+#header .navbar .navbar-nav li:hover > ul.dropdown-menu {
+	top: 100%;
+	visibility: visible;
+	opacity: 1;
+	margin: 0
+}
+.mega_menu_dropdown .dropdown-menu {
+    padding: 30px;
+}
+#header .navbar-nav .dropdown-menu .dropdown ul.dropdown-menu {
+	top: 100% !important;
+	left: 100%;
+}
+#header .navbar-nav .dropdown-menu .dropdown:hover ul.dropdown-menu {
+	top: 0 !important
+}
+.full-page-map #header .navbar .navbar-nav li > ul.dropdown-menu {
+	top: inherit;
+	bottom: 110%
+}
+.full-page-map #header .navbar .navbar-nav li:hover > ul.dropdown-menu {
+	bottom: 100%;
+}
+.full-page-map #header .navbar-nav .dropdown-menu .dropdown ul.dropdown-menu {
+	display: inline-table
+}
+}
+
+/*Medium devices (tablets, 768px and up to 991pz)*/
+@media (max-width: 991px) {
+.nav-on-top, .nav-on-banner {
+	position: static
+}
+/*====================================================================
+Home Page 1 Css Start
+====================================================================*/
+.dropdown_1 .bootstrap-select .dropdown-toggle, .dropdown_1 .show > .btn-light.dropdown-toggle {
+	padding: 0 25px 0 10px
+}
+.dropdown_1 .bootstrap-select .dropdown-toggle::after, .dropdown_1 .show > .btn-light.dropdown-toggle::after {
+	right: 10px !important
+}
+#header #navbarSupportedContent {
+	padding: 20px 0;
+}
+#header.header_style_2 #navbarSupportedContent {
+	padding: 20px
+}
+#header .navbar-light .navbar-brand, #header.header_style_2 .navbar-light .navbar-brand {
+	padding: 10px 0
+}
+#header.fixed-top {
+	position: static!important;
+	background-color: inherit !important
+}
+#header.header_style_2.fixed-top {
+	position: absolute !important;
+	z-index: 9999;
+	background-color: transparent !important
+}
+#header .nav-item .dropdown-menu, #header.header_style_2 .nav-item .dropdown-menu {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 0;
+	padding-left: 15px;
+}
+#header .navbar-expand-lg .navbar-nav .nav-link, #header.header_style_2 .navbar-expand-lg .navbar-nav .nav-link {
+	line-height: inherit;
+	padding: 10px 0
+}
+#header .dropdown-toggle::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%)
+}
+#header .dropdown.visible .dropdown-toggle::after {
+	top: 20px
+}
+.slider-search-2 {
+	width: 100%;
+}
+.slider-search-2 .dropdown-toggle {
+	margin-bottom: 20px
+}
+#map-banner.half-wide-map {
+	display: inherit;
+}
+.half-wide-map #map, .search-fixed-right {
+	width: 100%;
+	float: inherit;
+}
+.property_list_1 .property_text {
+	margin-bottom: 50px
+}
+.property_list_1 .zoom_effect_1 {
+	width: 51%;
+}
+.property_list_1 p {
+	display: none
+}
+.property_list_1.full .p-3 {
+	padding: 20px !important;
+}
+.property_list_1.full .property_text {
+	margin-bottom: 40px;
+}
+.property_listing_2 li {
+	width: 50%
+}
+.mb_md_30 {
+	margin-bottom: 30px
+}
+.mt_md_50 {
+	margin-top: 50px
+}
+.pb_md_50 {
+	padding-bottom: 50px !important
+}
+.pricing_item_1.active {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	display: table-caption
+}
+.footer_widget {
+	margin-bottom: 30px
+}
+.single_blog_detail.p_20 {
+	padding-left: 0;
+	padding-right: 0
+}
+.check_submit li {
+	width: 48%;
+}
+}
+
+/*Small devices (landscape phones, 576px and up to 767px)*/
+@media (max-width: 767px) {
+/*====================================================================
+Home Page 1 Css Start
+====================================================================*/
+.top_header_1 {
+	display: none
+}
+.title_row .sub_title p {
+	padding: 0
+}
+.filter-btns li {
+	margin-bottom: 10px
+}
+.category_img.ctg_2 {
+	height: 350px;
+}
+.property_sorting ul > li {
+	display: none
+}
+.property_sorting ul > li:first-child {
+	display: block
+}
+.property_list_1 {
+	display: inherit
+}
+.property_list_1 .zoom_effect_1, .property_list_1 .property_list_details {
+	width: 100%;
+}
+.icon_list_1 li {
+	width: 50%
+}
+.property_search_area .bootstrap-select {
+	width: 30% !important;
+}
+.property_search_area .input {
+	width: 70%;
+}
+.property_listing_2 li {
+	width: 100%
+}
+.reg_banner .btn {
+	float: left;
+	margin-top: 30px
+}
+.mt_sm_30 {
+	margin-top: 30px
+}
+.mt_sm_50 {
+	margin-top: 50px
+}
+.alert.alert-warning {
+	display: none
+}
+.message_item .float-left {
+	margin-top: 30px;
+	width: 410px
+}
+.message_item .datetime {
+	position: absolute;
+	top: 15px;
+	left: 90px
+}
+.message_item .datetime span {
+	display: inline-block
+}
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+/*====================================================================
+Home Page 1 Css Start
+====================================================================*/
+.slider-search-2 .btn {
+	margin-top: 20px
+}
+.single_property_detail .more_information li, .icon_list_1 li, .property_listing_2.style_2 li {
+	width: 100%;
+}
+.property_search_area .bootstrap-select, .property_search_area .input {
+	width: 50% !important;
+}
+.check_submit li {
+	width: 100%;
+}
+.award_item img {
+	width: auto;
+	margin-bottom: 30px
+}
+.pagination {
+	display: inherit;
+}
+.pagination li {
+	float: left;
+	margin-bottom: 10px
+}
+.message_item .float-left {
+	width: 70%
+}
+.my_property_list tbody tr td img {
+	width: 30%;
+	margin-right: 3%;
+}
+.my_property_list tbody tr td .text {
+	width: 65%;
+}
+.my_property_list tbody tr td {
+	padding-left: 0
+}
+.my_property_list .delete {
+	text-align: center;
+}
+.profile_area #city {
+	margin-bottom: 25px
+}
+.terms_description .terms_deals {
+	padding-left: 50px;
+}
 }

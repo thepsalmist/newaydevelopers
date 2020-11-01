@@ -1,80 +1,73 @@
 {% load static %}
 <!-- Footer Section Start -->
-<section class="full_row py_80 bg_secondary">
-  <div class="container">
+<footer id="footer" class="bg-light footer-light">
+  <div class="container container-1000">
     <div class="row">
-      <div class="col-lg-3 col-sm-6">
-        <div class="footer_widget company_info">
-          <div class="widget_head"><a href="index_1.html"><img class="logo-bottom" src="img/logo2.png" alt=""></a></div>
-          <p>Newwaydevelopers is a bespoke real estate firm whose main vission is to provide Kenyan,s with affordable
-            housing at ideal locations.We provide services to both home owners and investors</p>
-          <div class="socail_media_1 mt-3">
-            <ul>
-              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
-              <li><a href="https://vimeo.com/"><i class="fab fa-vimeo-v"></i></a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-lg-3">
+        <!-- <p><span class="icon-uilove icon-uilove-realestate"></span></p> -->
+        <img class="logo" src="{% static "core/img/icons/new_way-bg.png"%} " alt="logo">
+        <address class="mb-3">
+          <strong>New Way Developers.</strong><br>
+          Nairobi CBD<br>
+          Kenya<br>
+          <abbr title="Phone">P:</abbr> (+254) 726 610840
+        </address>
+        <div class="footer-social mb-4"><a href="#" class="ml-2 mr-2"><span class="fa fa-twitter"></span></a> <a
+            href="#" class="ml-2 mr-2"><span class="fa fa-facebook"></span></a> <a href="#" class="ml-2 mr-2"><span
+              class="fa fa-instagram"></span></a></div>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="footer_widget get_in_touch">
-          <div class="widget_head">
-            <h4 class="widget_title">Get In Touch</h4>
-          </div>
-          <ul>
-            <li> <i class="fas fa-map-marker-alt"></i>
-              <h6 class="text_white mb-2">Office Address</h6>
-              <span>Nairobi CBD, Kenya</span>
-            </li>
-            <li> <i class="fa fa-phone" aria-hidden="true"></i>
-              <h6 class="text_white mb-2">Call Us 24/7</h6>
-              <span>(+254) 726 610840</span>
-            </li>
-            <li> <i class="far fa-envelope"></i>
-              <h6 class="text_white mb-2">Email Address</h6>
-              <span>info@newwaydevelopers.co.ke</span>
-            </li>
+      <div class="col-lg-2 col-sm-4">
+        <div class="footer-links">
+          <ul class="list-unstyled">
+            <li class="list-title"><a href="#">About</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="footer_widget quick_link">
-          <div class="widget_head">
-            <h4 class="widget_title">Quick Links</h4>
-          </div>
-          <ul>
-            <li><a href="faq.html">Freequinly Ask Question</a></li>
-            <li><a href="about.html">About Our Company</a></li>
-            <li><a href="our_service.html">Our Professional Services</a></li>
-            <li><a href="terms_and_condition.html">Terms and Conditions</a></li>
-            <li><a href="#">Become A Member</a></li>
+      <div class="col-lg-2 col-sm-4">
+        <div class="footer-links">
+          <ul class="list-unstyled">
+            <li class="list-title"><a href="#">Links</a></li>
+            <li><a href="#">For Rent</a></li>
+            <li><a href="#">Land</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Property Guides</a></li>
+            <li><a href="#">Jobs</a></li>
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="footer_widget newslatter">
-          <div class="widget_head">
-            <h4 class="widget_title">Newsletter</h4>
-          </div>
-          <p>Subscribe to our newsletter and we will inform your about newset projects.</p>
-          <div class="news_letter">
-            <form action="#" method="post">
-              <input type="email" name="email" placeholder="Enter Your Email" class="form-control">
-              <button type="submit" name="submit" class="btn btn_primary">subscribe</button>
-            </form>
-          </div>
+      <div class="col-lg-2 col-sm-4">
+        <div class="footer-links">
+          <ul class="list-unstyled">
+            <li class="list-title"><a href="#">Help</a></li>
+            <li><a href="#">Book Property</a></li>
+            <li><a href="#">FAQ</a></li>
+
+          </ul>
         </div>
       </div>
+      <div class="col-lg-3">
+        <div class="text-lg-right ml-lg-2">
+          <form>
+            <div class="list-title">Subscribe</div>
+            <div class="input-group input-group-lg">
+              <input type="text" name="email" class="form-control form-control-lg subscribe-input" placeholder="Email">
+              <div class="input-group-append ml-0">
+                <button class="btn subscribe-button" type="button"><i class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-credits d-lg-flex justify-content-lg-between align-items-center">
+      <div>Powered by <strong>newwaydevelopers</strong></div>
+
+      <div>© 2020 newwaydevelopers. All Rights Reserved</div>
     </div>
   </div>
-</section>
+</footer>
 <!-- Footer Section End -->
-
-<!-- Bottom Footer Start -->
-<div class="full_row py-4 bg_black">
-  <span class="copyright_text text-center text_white d-block">Copyright &copy; 2020 Newwaydevelopers</span>
-</div>
-<!-- Bottom Footer End -->

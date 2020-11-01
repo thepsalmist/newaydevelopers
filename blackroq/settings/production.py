@@ -1,8 +1,13 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "109.74.193.206", "newwaydevelopers.co.ke", "www.blackroq.co.ke"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "109.74.193.206",
+    "newwaydevelopers.co.ke",
+    "www.blackroq.co.ke",
+]
 
 
 DATABASES = {
@@ -11,5 +16,3 @@ DATABASES = {
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
-
-

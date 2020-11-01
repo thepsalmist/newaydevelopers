@@ -1,335 +1,249 @@
 {% extends "core/base.html"%}
 
-{% load static%}
+{% load static %}
 
 {% block content %}
 
-<div id="page_wrapper" class="container-fluid">
-  <div class="row">
-    {% include "core/header.html"%}
-
-    <!-- Slider Part Start -->
-    <div class="full_row">
-      <div id="slider" class="overflow_hidden" style="width:1200px; height:640px; margin:0 auto;margin-bottom: 0px;">
-        {% for property in latest_sales %}
-        <!-- Slide 1-->
-        <div class="ls-slide"
-          data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
-          <img width="1920" height="800" src="{{property.main_photo.url}}" class="ls-bg" alt="" />
-
-          <div style="width:100%; height:100%; background:rgba(11, 15, 41, 0.49); top:50%; left:50%;" class="ls-l"
-            data-ls="easingin:easeOutQuint; durationout:300; parallaxlevel:0; position:fixed;"></div>
-
-          <p style="font-size:18px; font-weight:500; top:280px; left:40px; font-family: 'Montserrat', sans-serif;"
-            class="ls-l text_white"
-            data-ls="offsetyin:100%; offsetyout:-250; delayin:100; clipin:0 0 100% 0; durationout:400; parallaxlevel:0;">
-            Ksh. {{property.price}}</p>
-
-          <p style="top:300px; left:40px; text-align:initial; font-weight:600; font-style:normal; font-family:Montserrat; text-decoration:none; font-size:30px; line-height:76px; width:600px; white-space:normal;"
-            class="ls-l text_white"
-            data-ls="offsetyin:0; offsetxin:-110w; delayin:300; easingin:easeOutQuint; offsetyout:-250; fadein:false; clipin:0 0 0 100%; durationout:400; parallax:false;">
-            {{property.title}}</p>
-
-          <p style="font-weight:400; text-align:left; width:500px; font-family:Montserrat; font-size:15px; line-height:30px; top:370px; left:40px; white-space:normal;"
-            class="ls-l text_white"
-            data-ls="offsetyin:0; offsetxin:-110w; delayin:800; easingin:easeOutQuint; offsetyout:-250; fadein:false; clipin:0 0 0 100%; durationout:300; parallax:false;">
-            <i class="fas fa-map-marker-alt"></i> {{property.location}}</p>
-
-          <a class="ls-l" href="#" target="_self"
-            data-ls="offsetyin:40; delayin:1200; easingin:easeOutQuint; offsetyout:-300; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#444444; parallax:false;">
-            <p style="font-weight:500; text-align:center; cursor:pointer; padding-right:30px; padding-left:30px; font-size:14px; line-height:30px; top:440px; left:40px; padding-top:10px; padding-bottom:10px; white-space:normal;"
-              class="btn btn_primary">View Details</p>
-          </a>
+<div id="main">
+  {% include 'core/header.html' %}
+  <div class="home-search">
+    <div class="swiper-container item-listing grid featured-gallery featured-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static "core/img/house/new_5.jpg" %}');"></div>
+                <div class="item-meta">
+                  <div class="item-info">
+                    <h3 class="item-title">3 bed bungalow</h3>
+                    <div class="item-location"><i class="fa fa-map-marker"></i> Airways Park Estate Utawala</div>
+                  </div>
+                  <div class="item-price">Ksh 4,850,000 <small> 3200 / sq m</small> </div>
+                </div>
+                <div class="item-badges">
+                  <div class="item-badge-left">Featured</div>
+                  <div class="item-badge-right">For Sale</div>
+                </div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
         </div>
-        {% endfor %}
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static "core/img/house/new_3.jpg" %}');"></div>
+                <div class="item-meta">
+                  <div class="item-info">
+                    <h3 class="item-title">3 bed bungalow</h3>
+                    <div class="item-location"><i class="fa fa-map-marker"></i> Airways Park Estate Utawala</div>
+                  </div>
+                  <div class="item-price">Ksh 4,850,000 <small>3200 / sq m</small> </div>
+                </div>
+                <div class="item-badges">
+                  <div class="item-badge-left">Featured</div>
+                  <div class="item-badge-right">For Sale</div>
+                </div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static 'core/img/house/new_2.jpg' %}');"></div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
+        </div>
       </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <!-- Slider Part End -->
-    <!-- Service Section Start -->
-    <!-- <section class="full_row py_80 bg_gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title_row text-center mb-5">
-              <h3 class="title mb-4">What are you looking for?</h3>
-              <div class="sub_title text_secondary">
-                <p>At newway developers we strive to provide Kenyans with the best real estate solutions across all property segments.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="service_item_1 text-center mb_30 bg_gray wow fadeInUp" data-wow-delay="100ms"
-              data-wow-duration="1500ms">
-              <div class="icon_large icon"><i class="glyph-icon flaticon-home"></i></div>
-              <a href="property_grid.html">
-                <h4 class="py-3 title">Houses</h4>
-              </a>
-              <p>Are you looking to own a home or invest in one</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="service_item_1 text-center mb_30 bg_gray wow fadeInUp" data-wow-delay="200ms"
-              data-wow-duration="1500ms">
-              <div class="icon_large icon"><i class="glyph-icon flaticon-signs"></i></div>
-              <a href="property_grid.html">
-                <h4 class="py-3 title">Land</h4>
-              </a>
-              <p>Nisi. Tellus lobortis dapibus erat eu et. Senectus quam vitae in arcu nisi quam</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="service_item_1 text-center mb_30 bg_gray wow fadeInUp" data-wow-delay="300ms"
-              data-wow-duration="1500ms">
-              <div class="icon_large icon"><i class="glyph-icon flaticon-office"></i></div>
-              <a href="property_grid.html">
-                <h4 class="py-3 title">Office</h4>
-              </a>
-              <p>Nisi. Tellus lobortis dapibus erat eu et. Senectus quam vitae in arcu nisi quam</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="service_item_1 text-center mb_30 bg_gray wow fadeInUp" data-wow-delay="400ms"
-              data-wow-duration="1500ms">
-              <div class="icon_large icon"><i class="glyph-icon flaticon-shop"></i></div>
-              <a href="property_grid.html">
-                <h4 class="py-3 title">Business</h4>
-              </a>
-              <p>Nisi. Tellus lobortis dapibus erat eu et. Senectus quam vitae in arcu nisi quam</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Service Section End -->
-    <!-- Recent Property Start -->
-    <section class=" full_row py_80 bg_gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="d-table float-left mb_30">Featured <span class="text_primary">Properties</span>
-            </h3>
-            <a href="property_grid.html" class="property_link float-right">View All Properties</a>
-          </div>
-        </div>
-        <div class="row">
-          {% for property in properties %}
-          <div class=" col-lg-4 col-md-6">
-            <div class="property_grid_1 property_item bg-white mb_30">
-              <div class="zoom_effect_1">
-                <div class="upper_1 bg_secondary text-white">Rent</div>
-                <a href="{{property.get_absolute_url}}"><img src="{{property.main_photo.url}}"
-                    alt="Image Not Found!"></a>
-                <div class="upper_3 text_secondary">{{property.created|timesince}} Ago</div>
-              </div>
-              <div class="property_text p-3">
-                <h5 class="title"><a href="single_property.html">{{property.title}}</a></h5>
-                <span class="my-3 d-block"><i class="fas fa-map-marker-alt"></i> {{property.location}} </span>
-                <div class="quantity">
-                  <ul>
-                    <li><span>Area</span>{{property.area}} Sqft</li>
-                    <li><span>Rooms</span>{{property.rooms}}</li>
-                    <li><span>Beds</span>{{property.bedroom}}</li>
-                    <li><span>Baths</span>{{property.bathroom}}</li>
-                    <li><span>Garage</span>{{property.garage}}</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="bed_area d-table w-100">
-                <ul>
-                  <li>Ksh {{property.price}}</li>
-                  <li class="icon_medium"><a href="#"><i class="flaticon-like"></i></a>
-                  </li>
-                  <li class="icon_medium"><a href="#"><i class="flaticon-connections"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-    <!-- Recent Property End -->
-
-    <!-- Popular Category -->
-    <section id="popular-category" class="full_row py_80 bg_white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title_row text-center mb-5">
-              <h3 class="title mb-4">Our <span class="text_primary">Gallery</span></h3>
-              <div class="sub_title text_secondary">
-                <p>Watch what some of our customers say, and view some of the unique interior design of our houses.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="category_grid mb_30 wow zoomIn" data-wow-delay="100ms" data-wow-duration="1000ms">
-                  <div class="category_img ctg_1"><img src="{% static 'core/img/property/property_7.jpeg' %}" alt="">
-                  </div>
-                  <div class="upper_4">
-                    <div class="vertical_center text-center">
-                      <h3 class="title"><a href="#">Nyali Appartments</a></h3>
-                      <span>Client Handover</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="category_grid mb_30 wow zoomIn" data-wow-delay="100ms" data-wow-duration="1000ms">
-                  <div class="category_img ctg_1"><img src="{% static 'core/img/property/property_10.jpeg' %}" alt="">
-                  </div>
-                  <div class="upper_4">
-                    <div class="vertical_center text-center">
-                      <h3 class="title"><a href="#">Ruiru Gardens</a></h3>
-                      <span>Property View</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="category_grid mb_30 wow zoomIn" data-wow-delay="100ms" data-wow-duration="1000ms">
-                  <div class="category_img ctg_1"><img src="{% static 'core/img/property/property_10.jpeg' %}" alt="">
-                  </div>
-                  <div class="upper_4">
-                    <div class="vertical_center text-center">
-                      <h3 class="title"><a href="#">Collingham Gardens</a></h3>
-                      <span>Property Launch</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="category_grid mb_30 wow zoomIn" data-wow-delay="100ms" data-wow-duration="1000ms">
-                  <div class="category_img ctg_2"><img src="{% static 'core/img/property/property_9.jpeg' %}" alt="">
-                  </div>
-                  <div class="upper_4">
-                    <div class="vertical_center text-center">
-                      <h3 class="title"><a href="#">Mawingu Villas</a></h3>
-                      <span>Property View</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <!-- Popular Category End -->
-
-
-
-    <!--achivement Section Start-->
-    <div class="full_row py_80 bg_img_1 overlay_1">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="counting_item_1 text-center mb_md_30">
-              <div class="h2 text_white downling_center"><span class="numscroller" data-min="1" data-max="1020"
-                  data-delay="35" data-increment="10">0</span></div>
-              <span class="text_white subject">Project Done</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="counting_item_1 text-center mb_md_30">
-              <div class="h2 text_white downling_center"><span class="numscroller" data-min="1" data-max="960"
-                  data-delay="35" data-increment="10">0</span></div>
-              <span class="text_white subject">Satisfied Clients</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="counting_item_1 text-center mb_md_30">
-              <div class="h2 text_white downling_center"><span class="numscroller" data-min="1" data-max="420"
-                  data-delay="35" data-increment="10">0</span></div>
-              <span class="text_white subject">Awards Win</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="counting_item_1 text-center mb_md_30">
-              <div class="h2 text_white downling_center"><span class="numscroller" data-min="1" data-max="860"
-                  data-delay="35" data-increment="10">0</span></div>
-              <span class="text_white subject">Years Experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--achivement Section End-->
-
-    <!-- Recent News Section Start -->
-    <section class="full_row py_80 bg_gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title_row text-center mb-5">
-              <h3 class="title mb-4">Property <span class="text_primary">News</span></h3>
-              <div class="sub_title text_secondary">
-                <p>Get the latest news in real estate, property investment and home ownership.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          {% for post in latest_posts%}
-          <div class="col-lg-4 col-md-6">
-            <div class="news_item_1 bg_white mb_30 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
-              <div class="news_img"> <img src="{{post.thumbnail.url}}" alt="Image Not Found!"> <a
-                  href="{{post.get_absolute_url}}" class="news_eye"><i class="far fa-eye"></i></a> </div>
-              <div class="details p_20">
-                <h5 class="title mb-2"><a href="{{post.get_absolute_url}}">Our most popular delux house</a>
-                </h5>
-                <div class="post_info">Posted By <a href="#" class="text_primary">{{post.author}}</a> On
-                  {{post.created|date:"M d Y"}}</div>
-                <p>{{post.body|truncatewords:30}}.</p>
-                <a class="btn_link" href="{{post.get_absolute_url}}">Read More</a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-    <!-- Recent News Section End -->
-
-    <!-- Register Section Start -->
-    <section class="full_row py-5 bg_primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="reg_banner">
-              <h4 class="title mb-2">Are you looking for a House, Register with us today?
-              </h4>
-              <span class="text_white">Please click the button for register, we will become your best
-                agent and help you.</span>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="float-right">
-              <a href="#" class="btn btn_default">Register Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Register Section End -->
-
-    {% include "core/footer.html"%}
-
-    <!-- Find Part Satrt -->
-    <a href="#" id="scroll"><i class="fas fa-arrow-up"></i></a>
-    <!-- Find Part Satrt -->
   </div>
+  <div id="content" class="pt0 pb0">
+    <div class="feature-box centered gray">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Welcome To New Way Developers</span></div>
+              <div class="main-title-description">Thinking about buying property,look at our developments below</div>
+              <div class="clearfix"></div>
+              <div class="mt50 mb50">
+                <div class="featured-gallery v2 item-listing grid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item item-lg">
+                        <div class="item-image"
+                          style="background-image:url('{% static "core/img/house/new_1.jpg" %}');"><a href="#">
+
+                            <div class="item-badges">
+                              <div class="item-badge-right">For Sale</div>
+                            </div>
+                          </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="item item-md">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/house_7.jpg" %}');"><a href="#">
+                                <div class="item-meta">
+                                </div>
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Bedrooms</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="item item-sm">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/new_7.jpg" %}');"><a href="#">
+                                <div class="item-meta">
+                                </div>
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Living Room</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="item item-sm">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/new_4.jpg"%}')" ;><a
+                                href="property_single.html">
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Kitchen</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center"><a href="#" class="btn btn-xlg btn-link">Explore More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Our Services</span></div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Property Development</h4>
+                    <div class="caption"> We build great properties that reflects Kenya's uniqueculture at affordable
+                      rates.</div>
+                    <div class="button"><a href="#">FIND YOUR INSPIRATION</a></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Plot Sales</h4>
+                    <div class="caption">We have multiple plots along Kenya's Coast, get yours today.
+                    </div>
+                    <div class="button"><a href="#">CHOOSE A COUNTRY</a></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Property Advice</h4>
+                    <div class="caption">We have a team of great real estate agents who woul provide you with the best
+                      property advice.</div>
+                    <div class="button"><a href="#">EXPLORE NOW</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered gray">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="item-listing grid">
+                <div class="main-title"><span>Beach Plots</span></div>
+                <div class="main-title-description">We have several beach plots along the Kenya Coast</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href=""><img src="{% static 'core/img/house/new_2.jpg' %}"
+                            class="img-fluid" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href="property_single.html"><img
+                            src="{% static 'core/img/house/new_8.jpg' %}" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href="property_single.html"><img
+                            src="{% static 'core/img/house/new_9.jpg' %}" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered pb0">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Property News &amp; and Advice </span></div>
+              <div class="main-title-description">Stay up to date with the latest property news and advice from real
+                estate experts.</div>
+              <div class="item-listing grid mb50">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"> <a href="#"><img src="img/demo/property/7.jpg" class="img-fluid" alt="">
+                          <div class="item-meta">
+                            <div class="item-price"><small>{{post.created}}</small> </div>
+                          </div>
+                          <div class="item-badges">
+                            <div class="item-badge-right">Legal</div>
+                          </div>
+                        </a> </div>
+                      <div class="item-info">
+                        <h3 class="item-title">{{post.title}}</h3>
+                        <div class="item-comments-count"><i class="fa fa-comment-o"></i> 3</div>
+                        <div class="item-author">By {{post.author}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center"><a href="#" class="btn btn-xlg btn-link">View All</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary btn-circle" id="to-top"><i class="fa fa-angle-up"></i></button>
+  {% include 'core/footer.html' %}
+
 
 </div>
 
